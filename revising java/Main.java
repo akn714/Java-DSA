@@ -91,21 +91,64 @@ public class Main {
 
         
         /* ---------------- TAKING INPUTS ---------------- */
-        Scanner sc = new Scanner(System.in);
-        System.out.println("input your age");
-        int age2 = sc.nextInt();
-        System.out.println("your age is "+age2);
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("input your age");
+        // int age2 = sc.nextInt();
+        // System.out.println("your age is "+age2);
 
-        // taking string input
-        System.out.print("enter your name: ");
-        String name2 = sc.next();
-        System.out.println("your name is "+name2);
+        // // taking string input
+        // System.out.print("enter your name: ");
+        // String name2 = sc.next();
+        // System.out.println("your name is "+name2);
+
+        // sc.nextLine(); // always use this before taking string input
+
+        // System.out.println("how are you");
+        // String about = sc.nextLine();
+        // System.out.println("about: "+about);
+
+        /* ---------------- CONDITIONAL STATEMENTS ---------------- */
+        boolean condition = true;
+        if(condition){
+            System.out.println("true");
+        }
+        else{
+            System.out.println("false");
+        }
+
+        int switch_condition = 5;
+
+        switch (switch_condition) {
+            case 5:
+                System.out.println("first case");
+                break;
+            case 3:
+                System.out.println("second case");
+                break;
         
-        sc.nextLine(); // always use this before taking string input
+            default:
+                System.out.println("default case");
+        }
 
-        System.out.println("how are you");
-        String about = sc.nextLine();
-        System.out.println("about: "+about);
+        /* ---------------- LOOPS ---------------- */
+        // for, while, do while
+        for(int i=0;i<10;i++){
+            System.out.println(i);
+        }
 
+        /* ---------------- EXCEPTION HANDLING ---------------- */
+        // try, catch
+        int[] try_catch_array = {2,3,6};
+        try {
+            System.out.println(try_catch_array[6]);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+        /* ---------------- FUNCTIONS ---------------- */
+        add(2,3,6);
+    }
+    public static void add(int ...arr){
+        System.out.println("ok");
     }
 }

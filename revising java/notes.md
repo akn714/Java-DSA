@@ -33,8 +33,22 @@
 * Logical Operators
 * Comparison Operators
 
-***Uniary operator***
-* ++, --
+***Uniary operators***
+* ++
+* --
+
+***Comparison Operators***
+* a == b
+* a != b
+* a < b
+* a > b
+* a <= b
+* a >= b
+
+***Logical Operators***
+* && (and)
+* || (or)
+* ! (not)
 
 ### Taking inputs
 ***taking string input***
@@ -52,5 +66,8 @@ String about = sc.nextLine();
 System.out.println("about: "+about);
 ```
 
+### Conditional statements
+* if, else, else if
+* switch
 
 

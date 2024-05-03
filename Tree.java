@@ -1,9 +1,9 @@
 public class Tree{
-    public static void main(string args[]){
+    public static void main(String args[]){
 
     }
 }
 
-public class MyTree{
+class MyTree{
     
 }
